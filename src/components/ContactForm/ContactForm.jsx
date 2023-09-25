@@ -5,7 +5,6 @@ import css from './ContactForm.module.css';
 export class ContactForm extends Component {
 
     state = {
-        id: '',
         name: '',
         number: ''
     };
@@ -16,7 +15,6 @@ export class ContactForm extends Component {
         this.props.onSubmit({ ...this.state });
 
         this.setState({
-            id: '',
             name: '',
             number: ''
         });
